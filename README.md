@@ -1,0 +1,1 @@
+This is a technical documentation page on the workflow to create a GitHub repository, work on it on your local machine, and update changes on GitHub.

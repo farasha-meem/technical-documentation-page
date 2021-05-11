@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <nav id="navbar"> 
+            <header> GitHub Workflow </header> 
+            <a class="nav-link" href="#Introduction"> Introduction </a> 
+            <a class="nav-link" href="#Repositories"> Repositories </a> 
+            <a class="nav-link" href="#From_GitHub_to_Local"> From GitHub to Local </a> 
+            <a class="nav-link" href="#Stage_and_Commit"> Stage and Commit </a> 
+            <a class="nav-link" href="#Push_Changes"> Push Changes </a> 
+        </nav>
+        <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header> Introduction </header> <p> The GitHub workflow includes creating a repository on github, working on your project in your local machine and finally updating your GitHub repository with the completed project. </p>
+            <p> This documentation assumes SSH code is already confugred on GitHub and basic knowledge of CLI commands. </p>
+        </section>
+        <section class="main-section" id="Repositories">
+            <header> Repositories </header> <p> A software repository, or “repo” for short, is a storage location for software packages. <sup> [1] </sup> </p> 
+            <p> For this workflow, we will have a GitHub repository as well as a clone repository on the local machine. We will keep both the repositories updated accordingly with each other. </p>
+        </section>
+        <section class="main-section" id="From_GitHub_to_Local"> <header> From GitHub to Local </header> 
+            <p> To create a repository on GitHub, press the "Create Repository" button and get the SSH code in order to clone to the local machine. </p>
+            <p> On the terminal of your local machine, make sure you are in the directory where you want to clone the repository. Note that this will create a new folder with the repository name in the current directory. To clone your GitHub repository copy the SSH code and paste it in the command:  </p> <ul> <li> <code> git clone SSH-Code-Here </code> </li> </ul>
+        <p> Navigate to the new folder created with the command: </p> <ul> <li> <code>cd Repository-Name</code> command </li> </ul>
+        </section>
+        <section class="main-section" id="Stage_and_Commit"> <header> Stage and Commit </header>
+        <p> The staging and comitting commands are all done through the terminal. </p>
+        <p> We will add the changes to staging with the command: </p> <ul> <li> <code> git add *</code> </li> </ul> <p> to add all changes and once we are satisfied with a task, we can commit the changes with the command: </p> <ul> <li> <code> git commit -m "message" </li> </ul> </code> </section>
+        <section class="main-section" id="Push_Changes"> <header> Push Changes </header> <p> Once we are done updating our project, we are ready to push the changes into the GitHub repository with the command: </p> <ul> <li> <code> git push origin main </code> </li> </ul>
+        </section>
+        <footer> 
+            <h2> References </h2> 
+            <u> 
+            <li> <a> https://en.wikipedia.org/wiki/Software_repository </a> </li>
+            </u>    
+        </footer>
+        </main>
+    </body>
+</html>

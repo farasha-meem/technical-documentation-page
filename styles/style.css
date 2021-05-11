@@ -1,0 +1,22 @@
+nav {
+    height: 100%; 
+    position: fixed;
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    top: 0; 
+    left: 0;
+    background-color: grey; /* Black*/
+  }
+  nav a {
+    padding: 10px;
+  }
+  main {
+    margin-left: 20%;
+  }
+  
+  @media screen and (max-width: 500px) {
+    header {
+      background-color: grey;
+    }
+  }
